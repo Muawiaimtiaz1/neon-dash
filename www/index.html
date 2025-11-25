@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Neon Dash</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="score">Score: 0</div>
+        <div id="start-screen">
+            <h1>NEON DASH</h1>
+            <p>Tap to Jump</p>
+            <button id="start-btn">START</button>
+        </div>
+        <div id="game-over-screen" class="hidden">
+            <h1>GAME OVER</h1>
+            <p>Score: <span id="final-score">0</span></p>
+            <button id="restart-btn">RETRY</button>
+        </div>
+    </div>
+
+    <!-- Offline Overlay -->
+    <div id="offline-overlay" class="hidden">
+        <div class="offline-content">
+            <h1>YOU ARE OFFLINE</h1>
+            <p>Please connect to the internet to play.</p>
+        </div>
+    </div>
+
+    <!-- Ad Banner Placeholder (Bottom) -->
+    <div id="ad-banner">
+        <!-- Replace this with your AdSense/AdMob code -->
+        <div class="ad-placeholder">
+            <p>ADVERTISEMENT</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
